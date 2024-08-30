@@ -1,10 +1,11 @@
-import React from 'react'
+import './Cabecalho.css'
 
 function Cabecalho() {
   return (
-    <div className='cabecalho'>
-    <h1>suyane </h1>
+  <center><div className='cabecalho'>
+    <h1>bestiario</h1>
     </div>
+    </center>
   )
 }
 

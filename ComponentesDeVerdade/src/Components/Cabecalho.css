@@ -1,0 +1,15 @@
+
+.cabecalho{
+
+    color: var(--cor-5);
+    width: 10%;
+    border-radius: 22%;
+  
+}
+
+.Dragão{
+
+    width: 10%;
+    border-radius: 96%;
+    right: 90%;
+}

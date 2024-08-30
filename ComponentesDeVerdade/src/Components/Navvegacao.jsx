@@ -2,9 +2,10 @@ import React from 'react'
 
 function Navvegacao() {
   return (
-    <div>
-      <p>link 1 </p>
+    <center><div>
+      <p>Nome: safira </p>
     </div>
+    </center>
   )
 }
 

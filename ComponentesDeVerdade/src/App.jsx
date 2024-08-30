@@ -1,6 +1,7 @@
 import './App.css'
 import Cabecalho from './Components/Cabecalho'
 import Navvegacao from './Components/Navvegacao'
+import Corpo from './Components/Corpo'
 
 function App() {
 
@@ -9,6 +10,7 @@ function App() {
     <>
     <Cabecalho/>
     <Navvegacao/>
+    <Corpo/>
     </>
 
  
