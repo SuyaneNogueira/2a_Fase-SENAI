@@ -1,0 +1,8 @@
+.PP{
+
+    border: 1px dotted rgb(171, 110, 228);
+    padding: 20px;
+    border-radius: 10px; 
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
