@@ -8,9 +8,22 @@ import './EXdois.css'
 function ExDois() {
 
     function PosiPar(){
-        
+     let numeros = Number(prompt("Digite o número desejado: ")) 
+    
+  
+
+    if ( numeros >0 & numeros % 2 == 0 ) {
+
+      setResultado("É positivo e par!")
     }
 
+    else {
+
+      setResultado("É Negativo e talvez par")
+
+    }
+
+    }
     const[resultado, setResultado] = useState()
   return (
     <div className='PP'>
@@ -18,6 +31,7 @@ function ExDois() {
       <div>
         <button onClick={PosiPar}>Resposta</button>
       </div>
+      <div>{resultado}</div>
     </div>
   )
 }
