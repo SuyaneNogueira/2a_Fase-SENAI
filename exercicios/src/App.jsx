@@ -13,7 +13,7 @@ function App() {
     <ExDois/>
     <ExUm/>
     <MEDIA/>
-   {/* <Exemplo /> */}
+   <Exemplo />
    
     </>
   )

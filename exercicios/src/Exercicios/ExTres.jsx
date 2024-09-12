@@ -28,8 +28,12 @@ function ExTres() {
           
         }else if(ValorPrestacoes > ValorLimite){
 
-            setEmprestimo("valor imposivel de calcular digiete novamente!")
-        }
+            setEmprestimo(" Não é possivel realizar o emprestimo!")
+
+        }else if(Prestacoes == 0 & emprestimos == 0 ){  
+            setEmprestimo("Valores impossiveis de se calcular!")
+          }
+
     }
     const[empréstimo, setEmprestimo] = useState()
   return (
