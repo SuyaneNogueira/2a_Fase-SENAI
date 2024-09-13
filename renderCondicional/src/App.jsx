@@ -28,6 +28,8 @@ setPagina(<Home/>)
       <button onClick={() => {setPagina(<Render/>)}}>Renderizações</button>
     </nav>
   <Corpo/>
+  <h2>Escolha um dos botões</h2>
+  <h3>Feito por suyane.........................................e só</h3>
   {pagina}
     </>
   )
