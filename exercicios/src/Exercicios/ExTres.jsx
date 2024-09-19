@@ -20,11 +20,12 @@ function ExTres() {
         let ValorPrestacoes
 
         ValorLimite = Salario * trintaP
-        ValorPrestacoes = Salario / Prestacoes
+        ValorPrestacoes = emprestimos / Prestacoes
         
-        if ( ValorPrestacoes <= ValorLimite) {
+        if ( ValorPrestacoes < ValorLimite) {
 
             setEmprestimo("você pode fazer os emprestimos!")
+            
           
         }else if(ValorPrestacoes > ValorLimite){
 

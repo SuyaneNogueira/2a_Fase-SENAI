@@ -6,7 +6,7 @@ function media() {
     
 function CalcularMedia(){
 
-let notaUm = Number(prompt("digite a primeira média: "))
+let notaUm = Number(prompt("digite a primeira nota: "))
 let notaDois = Number(prompt("digite a segunda nota: "))
 let media = (notaUm + notaDois)/2
 setResultado(media)
