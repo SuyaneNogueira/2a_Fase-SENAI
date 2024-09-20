@@ -27,28 +27,37 @@ import './AT2.css'
 import { useState } from 'react'
 
 function At2() {
+  const [Diaria, setDiaria] = useState()
+  const [relatorio, setRelatorio] = useState()
     function Conta(){
-        let DescontoEmocional = 10
-        let DescontoConvenio = 15
+
+        let Desconto_Emocional = 10
+        let Desconto_Convenio = 15
         let Danos_Morais = 150
-        let cem = 100
-        let noventa = 90
-        let oitenta = 80
+        let cem = 100 /* 5*/
+        let noventa = 90 /* 6 a 10*/
+        let oitenta = 80 /*11 ou + */
+        let Desconto_total 
+        let Apagar_Sem_Desconto
+        let Apagar_com_Desconto
+
+        Desconto_total = Desconto_Emocional + Desconto_Convenio
+
+        if (Diaria == 5) {
+
+          Apagar_Sem_Desconto = cem + Danos_Morais
+
+          Apagar_com_Desconto = Apagar_Sem_Desconto * Desconto_total / 100
+
+          let 
+
+        
 
 
-
-
+        }
     }
-
-
-    const [Diaria, setDiaria] = useState(0)
   return (
-    <div className='AtividadeII'>
-      <label htmlFor="Diaria">Digite os dias que vai passar no albergue: </label>
-      <input type="Number" id='Diaria' />
-      <button onClick={Conta}></button>
-
-      <div>
+    <div className='AtividadeII'>   <div>
         <ul> 
             <h4>Diária</h4>
             <li>5 dias: R$100,00</li>
@@ -56,6 +65,14 @@ function At2() {
             <li>11 ou + dias: 80,00</li>
         </ul>
       </div>
+      <label htmlFor="Diaria">Digite os dias que vai passar no albergue: </label>
+      <input type="Number" id='Diaria'
+      value={Diaria}
+      onChange={(event) => {setDiaria(event.target.value)} }
+       />
+      <button onClick={Conta}>Calcular diária</button>
+
+   
     </div>
 
   
