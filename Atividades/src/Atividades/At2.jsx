@@ -26,7 +26,7 @@ import React from 'react'
 import './AT2.css'
 import { useState } from 'react'
 
-function At2() {
+function At2(){
   const [Diaria, setDiaria] = useState()
   const [relatorio, setRelatorio] = useState()
     function Conta(){
@@ -49,13 +49,62 @@ function At2() {
 
           Apagar_com_Desconto = Apagar_Sem_Desconto * Desconto_total / 100
 
-          let 
+          let infosAlbergue = { 
 
+            Danos_Morais:Danos_Morais,
+            Desconto_Por_emvolvimento_Emocional:Desconto_Emocional,
+            Desconto_Por_Convenio: Desconto_Convenio,
+            Total_Apagar_Sem_Desconto:Apagar_Sem_Desconto,
+            Com_Desconto:Apagar_com_Desconto,
+
+          }
+         
+          setRelatorio(infosAlbergue)
         
+       
+        }else if (Diaria => 6 && Diaria <= 10 ) {
+          
+        
+          Apagar_Sem_Desconto = noventa + Danos_Morais
 
+          Apagar_com_Desconto = Apagar_Sem_Desconto * Desconto_total / 100
+
+          let infosAlbergue = { 
+
+            Danos_Morais:Danos_Morais,
+            Desconto_Por_emvolvimento_Emocional:Desconto_Emocional,
+            Desconto_Por_Convenio: Desconto_Convenio,
+            Total_Apagar_Sem_Desconto:Apagar_Sem_Desconto,
+            Com_Desconto:Apagar_com_Desconto,
+
+          }
+         
+          setRelatorio(infosAlbergue)
+
+
+        } else if (Diaria => 11) {
+         
+          
+          Apagar_Sem_Desconto = oitenta + Danos_Morais
+
+          Apagar_com_Desconto = Apagar_Sem_Desconto * Desconto_total / 100
+
+          let infosAlbergue = { 
+
+            Danos_Morais:Danos_Morais,
+            Desconto_Por_emvolvimento_Emocional:Desconto_Emocional,
+            Desconto_Por_Convenio: Desconto_Convenio,
+            Total_Apagar_Sem_Desconto:Apagar_Sem_Desconto,
+            Com_Desconto:Apagar_com_Desconto,
+
+          }
+         
+          setRelatorio(infosAlbergue)
+ 
+          }
 
         }
-    }
+    
   return (
     <div className='AtividadeII'>   <div>
         <ul> 
@@ -72,6 +121,7 @@ function At2() {
        />
       <button onClick={Conta}>Calcular diária</button>
 
+      {relatorio && <AlbergueRelatorio infos={relatorio}/>}
    
     </div>
 
