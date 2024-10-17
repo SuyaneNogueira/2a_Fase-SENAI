@@ -15,7 +15,7 @@ function Render() {
       <h2>Renderizações de condicionais</h2>
         <div>  
             <button onClick={() => {setAdm(false)}}>sumiu</button>
-             <button onClick={() => {setAdm(true)}}>apareceu</button>
+           {/* * */} <button onClick={() => {setAdm(true)}}>apareceu</button> 
             { adm && <PainelAdm/> }   
         </div>
 
