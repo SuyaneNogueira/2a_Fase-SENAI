@@ -1,0 +1,16 @@
+.card-contatinho{
+
+background-color: rgb(187, 133, 236);
+border: 1px solid rgb(101, 70, 141);
+width: 200px;
+height: 300px;
+border-radius: 10px;
+}
+
+.Contatinhos{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
